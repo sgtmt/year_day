@@ -12,6 +12,7 @@
 		074756E21CECE8B9004916DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074756E01CECE8B9004916DC /* Main.storyboard */; };
 		074756E41CECE8B9004916DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074756E31CECE8B9004916DC /* Assets.xcassets */; };
 		074756E71CECE8B9004916DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074756E51CECE8B9004916DC /* LaunchScreen.storyboard */; };
+		074756F11CED9A92004916DC /* KnownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074756F01CED9A92004916DC /* KnownViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		074756E31CECE8B9004916DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		074756E61CECE8B9004916DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		074756E81CECE8B9004916DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074756F01CED9A92004916DC /* KnownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnownViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				074756DC1CECE8B9004916DC /* AppDelegate.swift */,
 				074756DE1CECE8B9004916DC /* ViewController.swift */,
+				074756F01CED9A92004916DC /* KnownViewController.swift */,
 				074756E01CECE8B9004916DC /* Main.storyboard */,
 				074756E31CECE8B9004916DC /* Assets.xcassets */,
 				074756E51CECE8B9004916DC /* LaunchScreen.storyboard */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					074756D81CECE8B7004916DC = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 7LQ42EZUAN;
 					};
 				};
 			};
@@ -136,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				074756DF1CECE8B9004916DC /* ViewController.swift in Sources */,
+				074756F11CED9A92004916DC /* KnownViewController.swift in Sources */,
 				074756DD1CECE8B9004916DC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +254,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = year_day/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sgtmt.jp.year-day";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +269,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = year_day/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sgtmt.jp.year-day";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
