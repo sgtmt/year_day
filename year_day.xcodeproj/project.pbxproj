@@ -13,6 +13,8 @@
 		074756E41CECE8B9004916DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074756E31CECE8B9004916DC /* Assets.xcassets */; };
 		074756E71CECE8B9004916DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074756E51CECE8B9004916DC /* LaunchScreen.storyboard */; };
 		074756F11CED9A92004916DC /* KnownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074756F01CED9A92004916DC /* KnownViewController.swift */; };
+		07A6594E1CEE41EC0084ACA4 /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A6594D1CEE41EC0084ACA4 /* ChoiceViewController.swift */; };
+		07A659501CEE42140084ACA4 /* SetYearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A6594F1CEE42140084ACA4 /* SetYearViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		074756E61CECE8B9004916DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		074756E81CECE8B9004916DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		074756F01CED9A92004916DC /* KnownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnownViewController.swift; sourceTree = "<group>"; };
+		07A6594D1CEE41EC0084ACA4 /* ChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		07A6594F1CEE42140084ACA4 /* SetYearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetYearViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				074756DC1CECE8B9004916DC /* AppDelegate.swift */,
 				074756DE1CECE8B9004916DC /* ViewController.swift */,
 				074756F01CED9A92004916DC /* KnownViewController.swift */,
+				07A6594D1CEE41EC0084ACA4 /* ChoiceViewController.swift */,
+				07A6594F1CEE42140084ACA4 /* SetYearViewController.swift */,
 				074756E01CECE8B9004916DC /* Main.storyboard */,
 				074756E31CECE8B9004916DC /* Assets.xcassets */,
 				074756E51CECE8B9004916DC /* LaunchScreen.storyboard */,
@@ -142,6 +148,8 @@
 				074756DF1CECE8B9004916DC /* ViewController.swift in Sources */,
 				074756F11CED9A92004916DC /* KnownViewController.swift in Sources */,
 				074756DD1CECE8B9004916DC /* AppDelegate.swift in Sources */,
+				07A659501CEE42140084ACA4 /* SetYearViewController.swift in Sources */,
+				07A6594E1CEE41EC0084ACA4 /* ChoiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +307,7 @@
 				074756ED1CECE8B9004916DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
