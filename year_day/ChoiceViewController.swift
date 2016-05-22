@@ -8,34 +8,58 @@
 
 import UIKit
 
-class ChoiceViewController: UIViewController,UITextFieldDelegate {
+class ChoiceViewController: UIViewController ,UITextFieldDelegate{
 
     @IBOutlet weak var day_u: UILabel!
     @IBOutlet weak var time_u: UILabel!
     @IBOutlet weak var day: UILabel!
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var choice_year: UITextField!
-    var atai:Int = 0
-    var aa:Int = 0
+    var time_set:Int = 0
+    var time_string:Int = 0
+    var day_set:Int = 0
+    var day_string:Int = 0
+    var time_u_set:Int = 0
+    var time_u_string:Int = 0
+    var day_u_set:Int = 0
+    var day_u_string:Int = 0
+    var default_year :Int = 0
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.choice_year.text = "year"
-        self.choice_year.delegate=self
-        
+              self.choice_year.delegate = self
+    
         
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func tap_keyboard(sender: AnyObject) {
+        self.view.endEditing(true)
+    }
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        choice_year.text = textField.text
+        textField.resignFirstResponder()
+        
+        return true
+    }
+    func times_set(){
+        time_string = (default_year*365)*24
+        self.time.text = String(time_string)
+        
+    }
 
-    
+    func days_set(){
+        day_string = (default_year*365)
+        self.day.text = String(day_string)
+    }
     
     
     
     @IBAction func submit_btn(sender: AnyObject) {
-        atai = Int(choice_year.text!)!
-        aa = (atai*365)*24
-        self.day.text = String(aa)
+        default_year = Int(choice_year.text!)!
+        times_set()
+       days_set()
+        
 
      }
     override func didReceiveMemoryWarning() {
