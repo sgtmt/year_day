@@ -34,6 +34,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpQ-LQ-x9a">
                                 <rect key="frame" x="108" y="134" width="105" height="30"/>
                                 <state key="normal" title="指定年から今年"/>
+                                <connections>
+                                    <segue destination="VZc-K1-6rW" kind="modal" id="Gzt-E1-YWM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -48,7 +51,7 @@
         <!--Title-->
         <scene sceneID="XAY-Zr-y8f">
             <objects>
-                <viewController id="VZc-K1-6rW" sceneMemberID="viewController">
+                <viewController id="VZc-K1-6rW" customClass="SetYearViewController" customModule="year_day" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K0Y-m9-dZL"/>
                         <viewControllerLayoutGuide type="bottom" id="Gfb-Mj-5lW"/>
@@ -60,6 +63,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doJ-85-kNd">
                                 <rect key="frame" x="143" y="492" width="34" height="30"/>
                                 <state key="normal" title="back"/>
+                                <connections>
+                                    <action selector="back_Btn:" destination="VZc-K1-6rW" eventType="touchUpInside" id="cjo-kL-tJS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="指定年からry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpb-TO-Lxb">
                                 <rect key="frame" x="85" y="20" width="100" height="21"/>
@@ -92,6 +98,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10U-dL-ibv">
                                 <rect key="frame" x="112" y="242" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="accept_Btn:" destination="VZc-K1-6rW" eventType="touchUpInside" id="JVw-ZV-dWJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsj-AF-Bkm">
                                 <rect key="frame" x="48" y="289" width="34" height="21"/>
@@ -146,10 +155,18 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="aJk-GQ-7Y8"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="day_label" destination="ON3-wO-Yaq" id="mAX-uo-yOb"/>
+                        <outlet property="day_u_label" destination="FxL-QF-GlC" id="GPW-vA-H8K"/>
+                        <outlet property="default_year" destination="n6S-CB-1Kz" id="rJk-RA-6CW"/>
+                        <outlet property="end_year" destination="sgv-nK-FYr" id="bID-Yc-m0M"/>
+                        <outlet property="time_label" destination="idQ-TJ-d7N" id="ztu-TS-brP"/>
+                        <outlet property="time_u_label" destination="ofV-mD-1AY" id="Yx0-th-9sb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ua-44-rmx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="798" y="920"/>
+            <point key="canvasLocation" x="725" y="945"/>
         </scene>
         <!--Choice View Controller-->
         <scene sceneID="MG3-Vu-hHM">
@@ -166,6 +183,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i98-Nk-gWi">
                                 <rect key="frame" x="143" y="496" width="34" height="30"/>
                                 <state key="normal" title="back"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="g3p-zH-B52" eventType="touchUpInside" id="u4Z-z6-dCH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="任意の年" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIY-lV-QY6">
                                 <rect key="frame" x="109" y="28" width="68" height="21"/>
